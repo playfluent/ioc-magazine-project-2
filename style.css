@@ -15,7 +15,6 @@
   }
 
 /* ----------- CSS RESET --------- */
-
 * {
     padding: 0;
     margin: 0;
@@ -33,12 +32,23 @@ div {
 }
 
 .tag {
-
     @apply uppercase text-zinc-600 text-xs tracking-wide;
 }
 
-body {
-    font-weight: 300;
+.button {
+    @apply border p-4 uppercase;
 }
 
+/* Typography */
+body {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
 
+h2, .logo {
+    font-family: 'Italiana', serif;
+}
+
+header a {
+    font-family: 'Montserrat', sans-serif;
+}

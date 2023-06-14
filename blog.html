@@ -1,6 +1,15 @@
 ---
 layout: default
-title: Blog Page 
+title: Blog Page
+banner-image: /uploads/travel/travel-8.jpg
+text-color: text-white
+text-position: items-center
+banner-height: min-h-[60]
+background-position: bg-center
+heading: Exploring Sumbawa.
+subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+link_url: read more
+link_text: Read More
 seo:
   title:
   description:
@@ -8,8 +17,30 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
+
 ---
 
+{% include hero-banner.html %}
+
+<!-- Recent Blog Tiles -->
+<section>
+    <h2 class="uppercase p-12 text-4xl text-white text-center">Recently on the Blog</h2>
+
+    <div class="container mx-auto sm:columns-3 gap-8">
+    {% for post in site.posts %}
+        <div class="p-2">
+        {% include post-loop-recently.html %}
+        </div>
+    {% endfor %}
+    </div>
+
+</section>
+
+
+
+
+
+{% comment %}
 <!------------------------ Split blog loop (part 1) ------------------------>
 <section class="p-5p">
 
@@ -70,3 +101,5 @@ seo:
 
 </section>
 
+
+{% endcomment %}
