@@ -144,7 +144,7 @@ _inputs:
     - 1
     - 2
     - 3
-  number-of-columns-dekstops:
+  number-of-columns-desktops:
     - 2
     - 3
     - 4

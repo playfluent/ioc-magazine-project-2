@@ -1,0 +1,11 @@
+<div class="{% if page.overlapping-content == true %} bg-position-4/5 content-end" style="background-image: url('{{page.background_image}}');"></div>
+<div>
+    <h1>{{page.heading}}</h1>
+    <h2>{{page.subheading}}</h2>
+
+    {% if page.link_url %}
+        <a href={{link_url}}>{{link_text}}</a>
+    {% endif %}
+</div>
+
+<!-- Add an overlay -->
