@@ -4,20 +4,20 @@
 
         {% for post in featured_posts limit:3 %}
             <a class="post-item p-2 break-inside-avoid mb-4
-                {% cycle 'col-span-1', 'col-span-2', col-span-1 %}" 
+                {% cycle 'col-span-1', 'col-span-2', 'col-span-1' %}" 
                 href="{{ post.url }}">
                 <div 
-                class="bg-cover {% cycle 'aspect-square', 'aspect-[2/1]', 'aspect-square', %}" 
+                class="bg-cover min-h-[20vw]" 
                 style="background-image:url( '{{ post.featured_image }}' );"></div>
                 
-                <div class="p-4 relative -top-4 left-2 bg-white">
+                <div class="p-4 bg-white">
 
                     <p class="uppercase text-zinc-600 text-xs tracking-wide">
                     {% for item in post.categories %}
                         <span class="tag mr-2"> {{item}} </span>
                     {% endfor %}
                     </p>
-                    <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
+                    <h2 class="mt-1 font-serif text-3xl line-clamp-1 leading-[1.2]"> {{ post.title }} </h2>
                     <hr class="border-rose-600 w-10 border-t-2 mt-4 mb-2"> 
                     <p class="uppercase text-zinc-600 text-xs tracking-wide"> 
                         <span class="font-bold mr-1">{{ post.author }}</span> {{ post.date | date_to_string }} 

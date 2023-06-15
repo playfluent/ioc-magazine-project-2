@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Homepage
-banner-image: /uploads/travel/travel-2.jpg
-intro_image: /uploads/travel/travel-3.jpg
-upcoming_image: /uploads/travel/travel-4.jpg
+banner-image: /assets/images/bg-boat.jpg
+intro_image: /assets/images/travel/travel-3.jpg
+upcoming_image: /assets/images/bg-city.jpg
 text-color: text-white
 text-position: items-center
 banner-height: min-h-[60]
 background-position: bg-center
-heading: A whole new world.
+heading: A whole <br>new world.
 subheading: Surfing Teaches you to appreciate the finer things in life, to be present, live in the moment  and just breath.
 seo:
   title: 
@@ -22,14 +22,14 @@ seo:
 {% include hero-banner.html %}
 
 <!-- Home Page Intro -->
-<section class="p-5p">
+<section class="p-5p bg-blog-section">
     <div class="grid md:grid-cols-2 gap-2">
         <div class="bg-cover" style="background-image: url('{{page.intro_image}}');"></div>
         <div class="py-10 p-4">
-            <h2 class="md:-ml-28 p-4 max-w-[250px] bg-[#d5d1cd] text-3xl ml-0">A fascinating heading about the site</h2>
+            <h2 class="md:-ml-60 p-4 max-w-md bg-blog-light ml-0 text-6xl text-center" id="blog-heading">A fascinating heading about the site</h2>
             <div>
-                <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe possimus quidem? Ratione recusandae eveniet perferendis modi. Odit expedita consequuntur velit aut sequi modi asperiores eius earum, repellat minima hic?</p>
-                <a class="uppercase py-2 underline" href="/blog.html">Read More</a>
+                <p class="py-4" id="blog-type2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe possimus quidem? Ratione recusandae eveniet perferendis modi. Odit expedita consequuntur velit aut sequi modi asperiores eius earum, repellat minima hic?</p>
+                <a class="py-2 blog-link" id="blog-subheading" href="/blog.html">Read More</a>
             </div>
         </div>
 </section>

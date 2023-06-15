@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sun
 author: Tina
 featured: true
 categories: [travel]
-featured_image: /uploads/travel/travel-2.jpg
+featured_image: /assets/images/travel/travel-2.jpg
 aspect-ratio: aspect-square
 seo: 
     title: 

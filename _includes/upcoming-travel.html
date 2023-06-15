@@ -1,19 +1,19 @@
 <section class="p-5p">
-    <h2 class="uppercase pb-8 text-4xl text-center font-light">Past Travel Destinations</h2>
+    <h2 class="pb-8 text-center text-5xl" id="blog-subheading">Past Travel Destinations</h2>
     <div class="grid md:grid-cols-5">
         <div class="col-span-3 p-4">
-            <div class="text-white">
-                <hr>
+            <div class="text-blog-dark ">
+                <hr class="border-blog-dark">
                 {% for item in site.data.destinations %}
                 <div class="py-3 flex justify-between">
-                    <h3>{{item.country}}</h3>
-                    <h3>{{item.dates}}</p>
+                    <h3 id="blog-type1">{{item.country}}</h3>
+                    <h3 id="blog-type1">{{item.dates}}</h3>
                 </div>
-                <hr>
+                <hr class="border-blog-dark">
                 {% endfor %}
             </div>
         </div>
         <div class="bg-cover col-span-2 relative" style="background-image: url('{{page.upcoming_image}}');">
-            <div class="max-md:hidden absolute top-2/3 left-0 max-w-xs p-4 bg-[#99938F] text-3xl tracking-widest"><h2>Currently In...</h2></div>
+            <div class="max-md:hidden absolute top-2/3 left-0 max-w-xs p-4 bg-blog-light text-3xl" ><h2 id="blog-heading">Currently in...</h2></div>
         </div>
 </section>

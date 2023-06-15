@@ -12,7 +12,7 @@
     .flex-center {
       @apply flex justify-center items-center;
     }
-  }
+}
 
 /* ----------- CSS RESET --------- */
 * {
@@ -39,16 +39,50 @@ div {
     @apply border p-4 uppercase;
 }
 
+.logo {
+    position: relative;
+    top: 8px;
+    font-size: 4rem;
+}
+
 /* Typography */
 body {
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
 
-h2, .logo {
+#blog-heading {
     font-family: 'Italiana', serif;
+    line-height: 85%;
+    font-weight: 400;
 }
 
-header a {
+#blog-subheading {
+    font-family: 'Italiana', serif;
+    font-weight: 300;
+    line-height: 85%;
+    letter-spacing: 11%;
+    text-transform: uppercase;
+}
+
+.blog-link {
+    text-decoration-line: underline;
+    --tw-text-opacity: 1;
+    color: rgb(87 83 78 / var(--tw-text-opacity));
+    font-size: 1.3rem;
+}
+
+#blog-type1 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height:135%;
+    text-transform: uppercase;
+}
+#blog-type2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 180%;
+    letter-spacing: 3%;
 }
