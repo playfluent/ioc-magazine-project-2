@@ -1,13 +1,21 @@
 
 <!-- Since the post loop item uses a column class, make sure the parent container has a grid -->
-
+<!-- Loops with variable aspect ratios -->
     <a href="{{ post.url }}" class="group break-inside-avoid block bg-zinc-50 hover:bg-zinc-100">
             
-            <div class="bg-cover group-hover:grayscale {{post.aspect-ratio}} relative">
+            <div class="bg-cover group-hover:grayscale relative
+                {% cycle 
+                    'aspect-square',
+                    'aspect-square',
+                    'aspect-[2/3]',
+                    'aspect-[4/3]',
+                    'aspect-[2/3]',
+                %}
+            ">
                 <img src="{{ post.featured_image }}" class="absolute inset-0 h-full w-full object-cover">
             </div>
             
-            <div class="p-4 relative bg-white">
+            <div class="p-4 relative bg-[#e3dfdc]">
                 <h2 class="mt-1 mb-2 text-2xl capitalize"> {{ post.title }} </h2>
                 <p class="text-zinc-600 line-clamp-2 max-sm:hidden"> {{ post.description }} </p>
                 <span class="underline hover:text-blue-600 uppercase" href="{{ post.url }}">Read More</span>
