@@ -1,3 +1,14 @@
+presets-instructions-vimeo-id: 663318015
+
+instructions:
+- step: Lorem ipsum dolor sit 
+- step: Consectetur adipisicing elit
+- step: Lorem ipsum dolor sit 
+- step: Consectetur adipisicing elit
+- step: Lorem ipsum dolor sit 
+- step: Consectetur adipisicing elit
+
+faqs:
 - question: Frequenctly Asked 1
   answer: Lorem, ipsum dolor sit amet consectetur
 - question: Frequenctly Asked 2
@@ -6,3 +17,5 @@
   answer: optio tempora, odio tempore dolorum. Adipisci veritatis deleniti quibusdam corrupti sit. Labore
 - question: Frequenctly Asked 4
   answer: lorem nihil neque cupiditate ducimus animi.
+
+before-and-after-description_html: text

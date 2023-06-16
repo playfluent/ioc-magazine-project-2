@@ -1,12 +1,6 @@
 ---
 layout: default
 ---
-<!-- <section class="p-8"> 
-	Product:  {{page.title}} 
-	Price: {{page.price }}
-	Before: <img src="{{page.before-image}}">
-	After: <img src="{{page.after-image}}">
-</section>  -->
 
 <section class="grid grid-cols-2">
     <div class="p-10p">
@@ -20,23 +14,20 @@ layout: default
     </div>
 </section>
 
-<section class="grid grid-cols-3 p-5p">
-    <div class="col-span-2">
-        <div class="h-full mb-2" style="background-image: url('{{page.featured_image}}');"></div>
-        <div class="grid grid-cols-6 text-center border border-black">
-            <div class="border border-black">1</div>
-            <div class="border border-black">2</div>
-            <div class="border border-black">3</div>
-            <div class="border border-black">4</div>
-            <div class="border border-black">5</div>
-            <div class="border border-black">6</div>
+<section class="p-5p">
+    <!-- Before After Slider -->
+
+    <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
+        <div class="col-span-3 p-8">
+            {% include before-and-after.html %}
+        </div>
+        <div class="p-8 py-20 col-span-2 self-center">
+            <h2 class="blog-subheading text-2xl pb-4">Before & After</h2>
+            <p>{{site.data.how-to.before-and-after-description_html}}</p>
         </div>
     </div>
-    <div class="h-full p-8 py-20">
-        <h2 class="blog-subheading text-4xl pb-4">Before & After</h2>
-        <div>{{content}}</div>
-    </div>
 </section>
+
 
 {% include how-to-use.html %}
 

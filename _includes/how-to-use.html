@@ -1,15 +1,16 @@
-<section class="grid grid-cols-3 p-5p">
-    <div class="h-full py-20">
-        <h2 class="blog-subheading text-4xl pb-4">How to Use Your Presets</h2>
-        <ul class="list-disc ml-6">
-            <li>Lorem ipsum dolor sit </li>
-            <li>Consectetur adipisicing elit</li>
-            <li>Lorem ipsum dolor sit </li>
-            <li>Consectetur adipisicing elit</li><li>Lorem ipsum dolor sit </li>
-            <li>Consectetur adipisicing elit</li>
-        </ul>
+<section class="px-5p">
+    <div class="grid sm:grid-cols-6 max-w-screen-xl mx-auto">
+        <div class="col-span-2 py-8 self-center">
+            <h2 class="blog-subheading text-2xl pb-4">How to Use Your Presets</h2>
+            <ul class="list-disc ml-6">
+                {% for item in site.data.how-to.instructions %}
+                    <li>{{item.step}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="py-8 col-span-4">
+            {% include video.html 
+                vimeo-id=site.data.how-to.presets-instructions-vimeo-id %}
+        </div>
     </div>
-    <div class="col-span-2">
-        <div class="aspect-video" style="background-image: url('{{page.featured_image}}');"></div>
-    </div>
-</section>
+</section> 
