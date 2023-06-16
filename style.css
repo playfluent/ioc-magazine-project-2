@@ -32,11 +32,11 @@ div {
 }
 
 .tag {
-    @apply uppercase text-zinc-600 text-xs tracking-wide;
+    @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
 }
 
 .button {
-    @apply border p-4 uppercase;
+    @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white;
 }
 
 .logo {
