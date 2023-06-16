@@ -1,6 +1,6 @@
 ---
 layout: product-presets
-title: Desert Glow
+title: Sunset Yellow
 subtitle: A short Product Subtitle
 description: Surfing teacehs you to appreciate the finer things in life, to be present, live in the moment and just breath
 price: $35

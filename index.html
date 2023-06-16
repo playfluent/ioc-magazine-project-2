@@ -23,7 +23,7 @@ seo:
 
 <!-- Home Page Intro -->
 <section class="p-5p bg-blog-section">
-    <div class="grid md:grid-cols-2 gap-2">
+    <div class="grid md:grid-cols-2 gap-2 max-w-screen-xl mx-auto">
         <div class="bg-cover" style="background-image: url('{{page.intro_image}}');"></div>
         <div class="py-10 p-4">
             <h2 class="md:-ml-60 p-4 max-w-md bg-blog-light ml-0 text-6xl text-center blog-heading">A fascinating heading about the site</h2>
@@ -35,8 +35,6 @@ seo:
 </section>
 
 {% include upcoming-travel.html %}
-
-<h2 class="uppercase text-4xl text-black text-center">Recently on the Blog</h2>
 
 {% include post-loop-featured.html %}
 

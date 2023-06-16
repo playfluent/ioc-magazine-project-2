@@ -16,7 +16,6 @@ layout: default
 
 <section class="p-5p">
     <!-- Before After Slider -->
-
     <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
         <div class="col-span-3 p-8">
             {% include before-and-after.html %}
@@ -28,46 +27,15 @@ layout: default
     </div>
 </section>
 
-
 {% include how-to-use.html %}
 
 {% include faqs.html %}
 
-
-<!-- Write the plan --
-
-2 col section
-    text div
-        h2: product.name
-        sub: product.subtitle
-        copy: product.description
-        button url:
-    button
-    img: product.img
-5 col section
-    (3col) interactive image gallery
-        nested 6col grid array
-    (2col) text
-        before and after title
-        copy: product.preset-description
-include how to use 
-    text col
-    video col
-include faqs
-    data.faq question
-    dropdown
-include related products 
-    3 col
-        tag
-        title
-        description
-        price
-
-    
-
-
-
-
-
-
--->
+<section class="bg-stone-200 p-5p">
+    <h2 class="blog-subheading text-4xl text-center pb-4">Related Products</h2>
+    <div class="grid sm:grid-cols-3 max-w-screen-xl mx-auto">
+        {% for product in site.products-presets limit:3 %}
+            {% include product-loop-related.html type='preset' %}
+        {% endfor %}
+    </div>
+</section>
