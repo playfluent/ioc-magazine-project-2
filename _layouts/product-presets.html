@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<!-- <section class="p-8"> 
+	Product:  {{page.title}} 
+	Price: {{page.price }}
+	Before: <img src="{{page.before-image}}">
+	After: <img src="{{page.after-image}}">
+</section>  -->
+
+<section class="grid grid-cols-2">
+    <div class="p-10p">
+        <h2 class="pt-32 text-4xl" id="blog-heading">{{page.title}}</h2>
+        <h3 class="py-4" id="blog-type1">{{page.subtitle}}</h3>
+        <div class="pb-4" id="blog-type2">{{content}}</div>
+        <a class="button" href="{{page.product-url}}">Buy Now</a>
+    </div>
+    <div class="relative">
+        <img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured_image}}" alt="{{page.title}} Example">
+    </div>
+</section>
+
+
+<!-- Write the plan --
+
+2 col section
+    text div
+        h2: product.name
+        sub: product.subtitle
+        copy: product.description
+        button url:
+    button
+    img: product.img
+5 col section
+    (3col) interactive image gallery
+        nested 6col grid array
+    (2col) text
+        before and after title
+        copy: product.preset-description
+include how to use 
+    text col
+    video col
+include faqs
+    data.faq question
+    dropdown
+include related products 
+    3 col
+        tag
+        title
+        description
+        price
+
+    
+
+
+
+
+
+
+-->
