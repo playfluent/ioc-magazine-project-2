@@ -1,8 +1,8 @@
 <section class="p-5p relative {{page.banner-height}} {{page.text-position}} {{page.text-color}} flex justify-start">
     <div class="absolute z-[-1] left-[20%] top-0 bottom-0 right-0 bg-cover {{page.background-position}}" style="background-image: url('{{page.banner-image}}')"></div>
     <div class="text-left ml-12 mt-12 mb"> 
-        <h2 class="mb-4 text-[10vw]" id="blog-heading"> {{page.heading}} </h2> 
-        <h3 class="mb-4 max-w-sm" id="blog-type1"> {{page.subheading}} </h3> 
+        <h2 class="mb-4 text-[10vw] blog-heading"> {{page.heading}} </h2> 
+        <h3 class="mb-4 max-w-sm blog-type1 text-xl"> {{page.subheading}} </h3> 
          {% if page.link_url ? %}
              <a class="" href={{page.link_url}}>{{page.link_text}}</a>
          {% endif %}

@@ -10,15 +10,37 @@ layout: default
 
 <section class="grid grid-cols-2">
     <div class="p-10p">
-        <h2 class="pt-32 text-4xl" id="blog-heading">{{page.title}}</h2>
-        <h3 class="py-4" id="blog-type1">{{page.subtitle}}</h3>
-        <div class="pb-4" id="blog-type2">{{content}}</div>
+        <h2 class="pt-32 text-4xl blog-heading">{{page.title}}</h2>
+        <h3 class="py-4 blog-type1 text-xl">{{page.subtitle}}</h3>
+        <div class="pb-4 blog-type2">{{content}}</div>
         <a class="button" href="{{page.product-url}}">Buy Now</a>
     </div>
     <div class="relative">
         <img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured_image}}" alt="{{page.title}} Example">
     </div>
 </section>
+
+<section class="grid grid-cols-3 p-5p">
+    <div class="col-span-2">
+        <div class="h-full mb-2" style="background-image: url('{{page.featured_image}}');"></div>
+        <div class="grid grid-cols-6 text-center border border-black">
+            <div class="border border-black">1</div>
+            <div class="border border-black">2</div>
+            <div class="border border-black">3</div>
+            <div class="border border-black">4</div>
+            <div class="border border-black">5</div>
+            <div class="border border-black">6</div>
+        </div>
+    </div>
+    <div class="h-full p-8 py-20">
+        <h2 class="blog-subheading text-4xl pb-4">Before & After</h2>
+        <div>{{content}}</div>
+    </div>
+</section>
+
+{% include how-to-use.html %}
+
+{% include faqs.html %}
 
 
 <!-- Write the plan --
