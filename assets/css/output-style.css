@@ -1025,6 +1025,9 @@ video {
 .min-h-80 {
   min-height: 80vh;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
 .w-0 {
   width: 0px;
 }
