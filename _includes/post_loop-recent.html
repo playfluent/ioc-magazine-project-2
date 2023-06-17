@@ -1,24 +1,21 @@
-<!-- post-loop-featured.html -->
-<h2 class="uppercase text-4xl pb-2 text-center blog-subheading">Recently on the Blog</h2>
-<div class="max-w-screen-xl mx-auto grid md:grid-cols-4">
-    {% assign featured_posts = site.posts | where: 'featured', true %}
+<!-- post-loop-recently.html -->
+<!-- ensure parent has .grid -->
+<!-- Loops with variable aspect ratios -->
+<a href="{{ post.url }}" class="group break-inside-avoid block bg-zinc-50 hover:bg-zinc-100">
+    <div class="bg-cover group-hover:grayscale relative
+        {% cycle 'aspect-square', 'aspect-square', 'aspect-[2/3]','aspect-[4/3]','aspect-[2/3]', %}">
+        <img src="{{ post.featured_image }}" class="absolute inset-0 h-full w-full object-cover">
+    </div>
+    
+    <div class="p-4 relative bg-blog-section">
+        <h2 class="mt-1 mb-2 text-2xl capitalize"> {{ post.title }} </h2>
+        <p class="text-zinc-600 line-clamp-2 max-sm:hidden mb-2"> {{ post.description }} </p>
+        <span class="underline hover:text-blue-600 uppercase" href="{{ post.url }}">Read More</span>
+        <p class="py-1">
+            {% for item in post.categories %}
+                <span class="tag"> {{item}} </span>
+            {% endfor %}
+        </p>
 
-    {% for post in featured_posts limit:3 %}
-        <a class="group p-2 break-inside-avoid mb-4
-            {% cycle 'col-span-1', 'md:col-span-2', 'col-span-1' %}" 
-            href="{{ post.url }}">
-
-            <div class="bg-cover min-h-[200px]" style="background-image:url( '{{ post.featured_image }}' );"></div>
-            
-            <div class="p-4 group-hover:bg-blog-light">
-                <h2 class="mt-1 text-2xl line-clamp-1 blog-type1"> {{ post.title }} </h2>
-                <p class="blog-type2 line-clamp-3">{{post.description}}</p>
-                <hr class="border-rose-600 w-10 border-t-2 mt-4 mb-2"> 
-                <p class="uppercase text-zinc-600 text-xs tracking-wide"> 
-                    <span class="font-bold mr-1">{{ post.author }}</span> {{ post.date | date_to_string }} 
-                </p>
-
-            </div>
-        </a>
-    {% endfor %}
-</div>
+    </div>
+</a>
