@@ -4,16 +4,16 @@ layout: default
 <!-- Lightroom Presests Layout -->
 
 <section class="max-w-screen-xl mx-auto"> 
-    <div class="grid grid-cols-2 gap-4 min-h-70">
+    <div class="grid md:grid-cols-2 gap-4 md:min-h-70">
         <div class="py-12 self-end max-w-lg px-8 xl:px-0">
             <h1 class="text-6xl blog-heading">{{page.title}}</h1>
-            <h2 class="text-2xl uppercase blog-type2"> {{page.subtitle}}</h2>
+            <h2 class="text-2xl uppercase blog-type2 py-4"> {{page.subtitle}}</h2>
             <div class="mb-6"> {{content}} </div>
             
             {% include shopify_buy.html buy-button-id=page.buy-button-id %}
             
         </div>
-        <div class="relative">
+        <div class="relative max-md:hidden">
             <img src="{{page.featured_image}}" class="min-h-50 absolute inset-0 h-full w-full object-cover">
         </div>
     </div>
@@ -23,10 +23,10 @@ layout: default
 <section class="p-5p">
     <!-- Before After Slider -->
     <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
-        <div class="col-span-3">
+        <div class="col-span-3 max-md:hidden">
             {% include before-and-after.html %}
         </div>
-        <div class="py-20 col-span-2 self-center pl-8">
+        <div class="py-20 col-span-full md:col-span-2 self-center md:pl-8">
             <h2 class="blog-subheading text-2xl pb-4">Before & After</h2>
             <p>{{site.data.how-to.before-and-after-description_html}}</p>
         </div>

@@ -8,7 +8,7 @@
   
     <!-- Thumbnails -->
     {% for image in page.inside_images %}
-        <div class="col-span-1 aspect-landscape relative">
+        <div class="col-span-1 aspect-landscape relative max-md:hidden">
             <div class="absolute inset-0 bg-cover bg-center cursor-pointer" 
                  :style="`background-image:url('{{ image.preview-image }}');`" 
                  @click="mainImage = '{{ image.preview-image }}'">

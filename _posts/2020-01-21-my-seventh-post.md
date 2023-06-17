@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My seventh post
+title: Palm Tree Bliss
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
@@ -9,7 +9,7 @@ featured: true
 categories:
   - self care
   - food
-featured_image: /assets/images/travel/travel-1.jpg
+featured_image: /assets/images/bg-palm.jpg
 aspect-ratio: aspect-[4/3]
 seo:
   title:

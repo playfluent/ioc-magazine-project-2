@@ -9,7 +9,7 @@
         </div>
 
         <!-- Bottom Grid -->
-        <div class="grid grid-cols-5 pt-8">
+        <div class="grid md:grid-cols-5 pt-8">
             <!-- Table of Contents -->
             <div class="col-span-3 px-4">
                 <h4 class="blog-subheading text-2xl pb-4">Table of Contents</h4>
@@ -23,15 +23,15 @@
                 {% endfor %}    
             </div>
             <!-- Whats Included List -->
-            <div class="col-span-2 px-4">
+            <div class="col-span-2 px-4 pt-8 md:pt-0">
                 <h4 class="blog-subheading text-2xl">What's Included</h4>
                 <ul class="list-disc m-6">
                     {% for item in site.data.how-to.instructions %}
                         <li>{{item.step}}</li>
                     {% endfor %}
                 </ul>
-                <a class="button" href="">ADD TO CART</a>
-                <a class="mx-2" href="">❤️ Add to wishlist</a>
+                <a class="button" href="#">ADD TO CART</a>
+                <a class="mx-2" href="#">❤️ Add to wishlist</a>
             </div>
         </div>
     </div>

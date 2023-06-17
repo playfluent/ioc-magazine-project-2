@@ -3,10 +3,10 @@
         <div class="absolute z-[-1] top-0 bottom-0 right-0 bg-cover {{page.background-position}}" style="background-image: url('{{page.banner-image}}')"></div>
         <div class="text-left ml-12 mt-12 mb">
             <h3 class="blog-type1">{{page.top-text}}</h3> 
-            <h2 class="mb-4 text-[10vw] blog-heading"> {{page.heading}} </h2> 
+            <h2 class="mb-4 text-[12vw] blog-heading"> {{page.heading}} </h2> 
             <h3 class="mb-4 max-w-sm blog-type1"> {{page.subheading}} </h3> 
             {% if page.link_url ? %}
-                <a class="blog-link uppercase text-blog-dark" href={{page.link_url}}>{{page.link_text}}</a>
+                <a class="blog-link uppercase" href={{page.link_url}}>{{page.link_text}}</a>
             {% endif %}
         </div> 
     </div>

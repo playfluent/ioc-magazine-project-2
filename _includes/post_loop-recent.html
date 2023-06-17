@@ -1,0 +1,24 @@
+<!-- post-loop-featured.html -->
+<h2 class="uppercase text-4xl pb-2 text-center blog-subheading">Recently on the Blog</h2>
+<div class="max-w-screen-xl mx-auto grid md:grid-cols-4">
+    {% assign featured_posts = site.posts | where: 'featured', true %}
+
+    {% for post in featured_posts limit:3 %}
+        <a class="group p-2 break-inside-avoid mb-4
+            {% cycle 'col-span-1', 'md:col-span-2', 'col-span-1' %}" 
+            href="{{ post.url }}">
+
+            <div class="bg-cover min-h-[200px]" style="background-image:url( '{{ post.featured_image }}' );"></div>
+            
+            <div class="p-4 group-hover:bg-blog-light">
+                <h2 class="mt-1 text-2xl line-clamp-1 blog-type1"> {{ post.title }} </h2>
+                <p class="blog-type2 line-clamp-3">{{post.description}}</p>
+                <hr class="border-rose-600 w-10 border-t-2 mt-4 mb-2"> 
+                <p class="uppercase text-zinc-600 text-xs tracking-wide"> 
+                    <span class="font-bold mr-1">{{ post.author }}</span> {{ post.date | date_to_string }} 
+                </p>
+
+            </div>
+        </a>
+    {% endfor %}
+</div>

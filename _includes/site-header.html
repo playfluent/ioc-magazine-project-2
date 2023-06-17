@@ -3,10 +3,16 @@
     <div class="text-left min-h-[70px]">
       <a href="/" class="logo blog-subheading"> MOJO </a>
     </div>
-    <nav class="text-right mr-4 blog-type1 text-xl">
-        <a class="p-4" href="/blog.html">Blog</a>
-        <a class="p-4" href="/shop.html">Shop</a>
-        <a class="p-4" href="/member-login.html">Members Login</a>
-    </nav>
+    <div class="max-sm:hidden">
+      <nav class="text-right mr-4 blog-type1 text-xl">
+          <a class="py-4 px-2" href="/blog.html">Blog</a>
+          <a class="py-4 px-2" href="/shop.html">Shop</a>
+          <a class="py-4 px-2" href="/member-login.html">Members Login</a>
+      </nav>
+    </div>
+    <div class="sm:hidden">
+      {% include responsive_nav.html %}
+    </div>
   </div>
 </header>
+

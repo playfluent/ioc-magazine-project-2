@@ -6,6 +6,7 @@ description: Surfing teacehs you to appreciate the finer things in life, to be p
 price: $35
 buy-button-id: 6132599521458
 product-url: 
+buy: BUY NOW
 featured_image: /assets/images/bg-filter.jpg
 comparison_images: 
     - before-image: /assets/images/travel/travel-3.jpg

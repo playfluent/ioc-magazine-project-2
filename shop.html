@@ -25,7 +25,7 @@ seo:
 <section class="p-5p">
 	<div class="max-w-screen-xl mx-auto">
 		<!-- Travel Guides -->
-		<h2 class="blog-subheading text-4xl text-center pb-6">Travel Guides</h2>
+		<h2 class="blog-subheading text-4xl lg:text-6xl text-center pb-6">Travel Guides</h2>
 		<div class="grid sm:grid-cols-3">
 			{% for product in site.products-guides limit:3 %}
 				{% include collection-loop.html %}
@@ -38,8 +38,8 @@ seo:
 
 <section class="p-5p">
 	<div class="max-w-screen-xl mx-auto">
-		<!-- Travel Guides -->
-		<h2 class="blog-subheading text-4xl text-center pb-6">Lightroom Presets</h2>
+		<!-- Presents -->
+		<h2 class="blog-subheading text-4xl lg:text-6xl text-center pb-6">Lightroom Presets</h2>
 		<div class="grid sm:grid-cols-3">
 			{% for product in site.products-presets limit:3 %}
 				{% include collection-loop.html %}
@@ -47,25 +47,3 @@ seo:
 		</div>
 	</div>
 </section>
-
-
-<!-- 
-<section class="p-8 max-w-screen-xl mx-auto">
-
-	<h2> Shop all presets </h2> 
-	
-	<div class="grid grid-cols-3 gap-4">
-	
-		{% for product in site.products-presets %}
-		
-		<a href="{{product.url}}"> 
-			<img src="{{product.after-image}}">
-			<h4> {{product.title}}</h4>
-			<p> {{product.price}}</p>
-        </a>
-	
-	    {% endfor %}
-	
-	</div>
-	
-</section> -->
