@@ -1,15 +1,15 @@
-<!-- Product Item uses a col, ensure parent has grid -->
-<a href="{{ product.url }}" class="group block m-2">
-        <div class="group-hover:grayscale relative aspect-square">
-            <img src="{{ product.featured_image }}" alt="{{product.title}}" class="absolute inset-0 w-full h-full object-cover">
-        </div>
-        
-        <div class="p-8 relative bg-stone-100">
-            <span class="tag bg-stone-200 text-xs mb-2"> {{include.type}} </span>
-            <h2 class="text-2xl pb-2"> {{ product.title }} </h2>
-            <p class="line-clamp-3 tracking-wide mb-4 text-xs"> {{ product.description }}</p>
-            <p class="text-xl"> {{product.price}} </p>
-        </div>
+<!-- Collection Loop -->
+<a href="{{ product.url }}" class="group block m-2 ">
+    <div class="group-hover:grayscale relative aspect-square">
+        <img src="{{ product.featured_image }}" alt="{{product.title}}" class="absolute inset-0 w-full h-full object-cover">
+    </div>
+    
+    <div class="p-8 relative bg-stone-100">
+        <span class="tag bg-stone-200 text-xs mb-2"> {{include.type}} </span>
+        <h2 class="text-2xl pb-2"> {{ product.title }} </h2>
+        <p class="line-clamp-3 tracking-wide mb-4 text-xs"> {{ product.description }}</p>
+        <p class="text-xl"> {{product.price}} </p>
+    </div>
 </a>
 
 

@@ -6,8 +6,8 @@ intro_image: /assets/images/travel/travel-3.jpg
 upcoming_image: /assets/images/bg-city.jpg
 text-color: text-white
 text-position: items-center
-banner-height: min-h-[60]
-background-position: bg-center
+banner-height: min-h-[35vh]
+background-position: bg-center left-[20%]
 heading: A whole <br>new world.
 subheading: Surfing Teaches you to appreciate the finer things in life, to be present, live in the moment  and just breath.
 seo:
@@ -26,7 +26,7 @@ seo:
     <div class="grid md:grid-cols-2 gap-2 max-w-screen-xl mx-auto">
         <div class="bg-cover" style="background-image: url('{{page.intro_image}}');"></div>
         <div class="py-10 p-4">
-            <h2 class="md:-ml-60 p-4 max-w-md bg-blog-light ml-0 text-6xl text-center blog-heading">A fascinating heading about the site</h2>
+            <h2 class="md:-ml-60 p-4 max-w-sm bg-blog-light ml-0 text-4xl text-center blog-heading">A fascinating heading about the site</h2>
             <div>
                 <p class="py-4 blog-type2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe possimus quidem? Ratione recusandae eveniet perferendis modi. Odit expedita consequuntur velit aut sequi modi asperiores eius earum, repellat minima hic?</p>
                 <a class="py-2 blog-link blog-subheading" href="/blog.html">Read More</a>
@@ -36,6 +36,7 @@ seo:
 
 {% include upcoming-travel.html %}
 
-{% include post-loop-featured.html %}
-
+<section class="p-5p bg-blog-section">
+    {% include post-loop-featured.html %}
+</section>
 

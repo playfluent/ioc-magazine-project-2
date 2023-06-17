@@ -2,25 +2,27 @@
 layout: default
 ---
 
-<section class="grid grid-cols-2">
-    <div class="p-10p">
-        <h2 class="pt-32 text-4xl blog-heading">{{page.title}}</h2>
-        <h3 class="py-4 blog-type1 text-xl">{{page.subtitle}}</h3>
-        <div class="pb-4 blog-type2">{{content}}</div>
-        <a class="button" href="{{page.product-url}}">Buy Now</a>
-    </div>
-    <div class="relative">
-        <img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured_image}}" alt="{{page.title}} Example">
+<section class="max-w-screen-xl mx-auto">
+    <div class="grid grid-cols-2">
+        <div class="p-10p">
+            <h2 class="pt-32 text-4xl blog-heading">{{page.title}}</h2>
+            <h3 class="py-4 blog-type1 text-xl">{{page.subtitle}}</h3>
+            <div class="pb-4 blog-type2">{{content}}</div>
+            <a class="button" href="{{page.product-url}}">Buy Now</a>
+        </div>
+        <div class="relative">
+            <img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured_image}}" alt="{{page.title}} Example">
+        </div>
     </div>
 </section>
 
 <section class="p-5p">
     <!-- Before After Slider -->
     <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
-        <div class="col-span-3 p-8">
+        <div class="col-span-3">
             {% include before-and-after.html %}
         </div>
-        <div class="p-8 py-20 col-span-2 self-center">
+        <div class="py-20 col-span-2 self-center pl-8">
             <h2 class="blog-subheading text-2xl pb-4">Before & After</h2>
             <p>{{site.data.how-to.before-and-after-description_html}}</p>
         </div>
@@ -29,9 +31,8 @@ layout: default
 
 {% include how-to-use.html %}
 
-{% include faqs.html %}
-
-<section class="bg-stone-200 p-5p">
+<section class="p-5p">
+    <!-- Related Products -->
     <h2 class="blog-subheading text-4xl text-center pb-4">Related Products</h2>
     <div class="grid sm:grid-cols-3 max-w-screen-xl mx-auto">
         {% for product in site.products-presets limit:3 %}

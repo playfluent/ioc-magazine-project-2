@@ -1,0 +1,16 @@
+<!-- Product Loop -->
+<a href="{{ product.url }}" class="group block m-2 break-inside-avoid">
+    <div class="group-hover:grayscale aspect-[7/8] relative">
+        <img src="{{ product.featured_image }}" alt="{{product.title}}" class="absolute inset-0 w-full h-full object-cover">
+    </div>
+    
+    <div class="p-4 relative">
+        {% if include.type ? %}<span class="tag bg-stone-200 text-xs mb-2"> {{include.type}} </span>{% endif %}
+        <h2 class="text-xl mb-2"> {{ product.title }} </h2>
+        <p class="line-clamp-3 tracking-wide my-2 text-xs"> {{ product.description }}</p>
+        <p class="text-xl my-2"> {{product.price}} </p>
+        <span class="blog-link blog-subheading">{{product.buy}}</span>
+    </div>
+</a>
+
+

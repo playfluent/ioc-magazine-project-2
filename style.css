@@ -61,14 +61,13 @@ body {
     font-family: 'Italiana', serif;
     font-weight: 300;
     line-height: 85%;
-    letter-spacing: 11%;
     text-transform: uppercase;
+    letter-spacing: .11em;
 }
 
 .blog-link {
     text-decoration-line: underline;
-    --tw-text-opacity: 1;
-    color: rgb(87 83 78 / var(--tw-text-opacity));
+    letter-spacing: 0.15em;
     font-size: 1.3rem;
 }
 
@@ -83,5 +82,5 @@ body {
     font-weight: 300;
     font-size: 1rem;
     line-height: 150%;
-    letter-spacing: 3%;
+    letter-spacing: .03em;
 }
