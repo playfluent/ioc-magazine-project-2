@@ -7,6 +7,13 @@ price: $37
 buy: Buy Now
 product-url: 
 featured_image: /assets/images/bg-magazine-2.jpg
+inside_images:
+- preview-image: /assets/images/bg-magazine.jpg
+- preview-image: /assets/images/bg-magazine-2.jpg
+- preview-image: /assets/images/bg-magazine.jpg
+- preview-image: /assets/images/bg-magazine-2.jpg
+- preview-image: /assets/images/bg-magazine.jpg
+- preview-image: /assets/images/bg-magazine-2.jpg
 
 ---
 

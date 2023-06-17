@@ -1,3 +1,4 @@
+past-travel:
 - country: Japan
   dates: 11 Jan - 19 Jan 2023
 - country: Thailand
@@ -10,3 +11,13 @@
   dates: 31 March - 22 April 2023
 - country: Indonesia
   dates: 23 April - 21 Aug 2023
+
+guide-contents:
+- country: Europe
+  dates: Top 10 Places to go
+- country: Australia
+  dates: Top 10 Places to go
+- country: Asia
+  dates: Top 10 Places to go
+- country: Europe
+  dates: Top 10 Places to go

@@ -3,9 +3,9 @@
         <h2 class="pb-8 text-center text-4xl blog-subheading">Past Travel Destinations</h2>
         <div class="grid md:grid-cols-5">
             <div class="col-span-3 p-4">
-                <div class="text-blog-dark ">
+                <div class="text-blog-dark">
                     <hr class="border-blog-dark">
-                    {% for item in site.data.destinations %}
+                    {% for item in site.data.destinations.past-travel %}
                     <div class="py-3 flex justify-between">
                         <h3 class="blog-type1">{{item.country}}</h3>
                         <h3 class="blog-type1">{{item.dates}}</h3>
