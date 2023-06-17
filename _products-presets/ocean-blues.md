@@ -4,6 +4,7 @@ title: Ocean Blues
 subtitle: A short Product Subtitle
 description: Surfing teacehs you to appreciate the finer things in life, to be present, live in the moment and just breath
 price: $35
+buy-button-id: 6132599521458
 product-url: 
 featured_image: /assets/images/bg-filter.jpg
 comparison_images: 

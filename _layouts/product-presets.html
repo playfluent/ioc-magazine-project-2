@@ -2,19 +2,23 @@
 layout: default
 ---
 <!-- Lightroom Presests Layout -->
-<section class="max-w-screen-xl mx-auto">
-    <div class="grid grid-cols-2">
-        <div class="p-10p">
-            <h2 class="pt-32 text-4xl blog-heading">{{page.title}}</h2>
-            <h3 class="py-4 blog-type1 text-xl">{{page.subtitle}}</h3>
-            <div class="pb-4 blog-type2">{{content}}</div>
-            <a class="button" href="{{page.product-url}}">Buy Now</a>
+
+<section class="max-w-screen-xl mx-auto"> 
+    <div class="grid grid-cols-2 gap-4 min-h-70">
+        <div class="py-12 self-end max-w-lg px-8 xl:px-0">
+            <h1 class="text-6xl blog-heading">{{page.title}}</h1>
+            <h2 class="text-2xl uppercase blog-type2"> {{page.subtitle}}</h2>
+            <div class="mb-6"> {{content}} </div>
+            
+            {% include shopify_buy.html buy-button-id=page.buy-button-id %}
+            
         </div>
         <div class="relative">
-            <img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured_image}}" alt="{{page.title}} Example">
+            <img src="{{page.featured_image}}" class="min-h-50 absolute inset-0 h-full w-full object-cover">
         </div>
     </div>
 </section>
+
 
 <section class="p-5p">
     <!-- Before After Slider -->

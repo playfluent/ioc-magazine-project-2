@@ -1,9 +1,10 @@
 ---
 layout: product-guides
-title: Exploring Sumbawa
+title: Bali Indonesia
 subtitle: A Product Subtitle
 description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath
 price: $37
+buy-button-id: 1686971064446
 buy: Buy Now
 product-url: 
 featured_image: /assets/images/bg-magazine-2.jpg
