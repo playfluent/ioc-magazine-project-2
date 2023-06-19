@@ -8,79 +8,83 @@
 
 /* Custom CSS */
 
-@layer components {
-    .flex-center {
-      @apply flex justify-center items-center;
+@layer base {
+    /* ----------- CSS RESET --------- */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: color 0.5s, background-color 0.5s, width 0.5s;
+    }
+
+    img { max-width: 100%; height: auto; }
+
+    section { position: relative; }
+
+    div {
+        background-size: cover;
+        background-position: center;
     }
 }
 
-/* ----------- CSS RESET --------- */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: color 0.5s, background-color 0.5s, width 0.5s;
-}
-  
-img { max-width: 100%; height: auto; }
+@layer components {
+    .flex-center {
+      @apply flex items-center justify-center;
+    }
 
-section { position: relative; }
+    .tag {
+        @apply inline-block p-1 text-sm tracking-wide uppercase text-stone-600;
+    }
 
-div {
-    background-size: cover;
-    background-position: center;
-}
+    .button {
+        @apply inline-block px-4 py-2 tracking-wide text-white uppercase bg-zinc-800;
+    }
 
-.tag {
-    @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
-}
-
-.button {
-    @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white;
+    .logo {
+        position: relative;
+        top: 8px;
+        font-size: 4rem;
+    }  
 }
 
-.logo {
-    position: relative;
-    top: 8px;
-    font-size: 4rem;
-}
-
-/* Typography */
-body {
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.blog-heading {
-    font-family: 'Italiana', serif;
-    line-height: 85%;
-    font-weight: 300;
-}
-
-.blog-subheading {
-    font-family: 'Italiana', serif;
-    font-weight: 300;
-    line-height: 85%;
-    text-transform: uppercase;
-    letter-spacing: .11em;
-}
-
-.blog-link {
-    text-decoration-line: underline;
-    letter-spacing: 0.15em;
-    font-size: 1.3rem;
-}
-
-.blog-type1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.blog-type2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 150%;
-    letter-spacing: .03em;
+@layer utilities {
+    .filter .active {
+        border: 2px solid #1e1e1e;
+        padding: 1rem;
+    }
+    
+    /* Typography */
+    body {
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .blog-link {
+        text-decoration-line: underline;
+        letter-spacing: 0.15em;
+        font-size: 1.3rem;
+    }
+    .blog-heading {
+        font-family: 'Italiana', serif;
+        line-height: 85%;
+        font-weight: 300;
+    }
+    .blog-subheading {
+        font-family: 'Italiana', serif;
+        font-weight: 300;
+        line-height: 85%;
+        text-transform: uppercase;
+        letter-spacing: .11em;
+    }
+    .blog-type1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .blog-type2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: .03em;
+    }
 }

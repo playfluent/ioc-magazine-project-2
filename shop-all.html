@@ -27,9 +27,9 @@ seo:
 	<h2 class="mb-4 text-4xl text-center"> Shop all products </h2> 
 
 	<div class="filter"> 
-		<a href="#" @click.prevent="filter = 'all'">All</a>
-        <a href="#" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
-        <a href="#" @click.prevent="filter = 'preset'">Presets </a>
+		<a href="#" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
+        <a href="#" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a href="#" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
 	</div>
 
 	<div class="grid grid-cols-3 gap-4">

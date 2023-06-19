@@ -313,6 +313,19 @@ video {
 [hidden] {
   display: none;
 }
+/* ----------- CSS RESET --------- */
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: color 0.5s, background-color 0.5s, width 0.5s;
+    }
+img { max-width: 100%; height: auto; }
+section { position: relative; }
+div {
+        background-size: cover;
+        background-position: center;
+    }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -816,6 +829,34 @@ video {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
 }
+.tag {
+  display: inline-block;
+  padding: 0.25rem;
+  font-size: 0.875rem;;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
+}
+.button {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.logo {
+        position: relative;
+        top: 8px;
+        font-size: 4rem;
+    }
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1207,9 +1248,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
 .bg-\[url\(\'\/uploads\/guides\/guide-2\.png\'\)\] {
   background-image: url('/uploads/guides/guide-2.png');
 }
@@ -1457,96 +1495,46 @@ video {
 .duration-700 {
   transition-duration: 700ms;
 }
-
-/* Custom CSS */
-
-/* ----------- CSS RESET --------- */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: color 0.5s, background-color 0.5s, width 0.5s;
-}
-  
-img { max-width: 100%; height: auto; }
-
-section { position: relative; }
-
-div {
-    background-size: cover;
-    background-position: center;
-}
-
-.tag {
-  display: inline-block;
-  padding: 0.25rem;
-  font-size: 0.875rem;;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
-}
-
-.button {
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.logo {
-    position: relative;
-    top: 8px;
-    font-size: 4rem;
-}
-
+.filter .active {
+        border: 2px solid #1e1e1e;
+        padding: 1rem;
+    }
 /* Typography */
 body {
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.blog-heading {
-    font-family: 'Italiana', serif;
-    line-height: 85%;
-    font-weight: 300;
-}
-
-.blog-subheading {
-    font-family: 'Italiana', serif;
-    font-weight: 300;
-    line-height: 85%;
-    text-transform: uppercase;
-    letter-spacing: .11em;
-}
-
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
 .blog-link {
-    text-decoration-line: underline;
-    letter-spacing: 0.15em;
-    font-size: 1.3rem;
-}
-
+        text-decoration-line: underline;
+        letter-spacing: 0.15em;
+        font-size: 1.3rem;
+    }
+.blog-heading {
+        font-family: 'Italiana', serif;
+        line-height: 85%;
+        font-weight: 300;
+    }
+.blog-subheading {
+        font-family: 'Italiana', serif;
+        font-weight: 300;
+        line-height: 85%;
+        text-transform: uppercase;
+        letter-spacing: .11em;
+    }
 .blog-type1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 .blog-type2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 150%;
-    letter-spacing: .03em;
-}
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: .03em;
+    }
+
+/* Custom CSS */
 
 .first-of-type\:rounded-t-md:first-of-type {
   border-top-left-radius: 0.375rem;
