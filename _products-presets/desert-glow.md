@@ -1,26 +1,24 @@
 ---
 layout: product-presets
+slug: desert-glow
 title: Desert Glow
-subtitle: A short Product Subtitle
-description: Surfing teacehs you to appreciate the finer things in life, to be present, live in the moment and just breath
-price: $35
-buy-button-id: 7710820696242
-buy: BUY NOW
-product-url: 
-featured_image: /assets/images/bg-filter.jpg
-comparison_images: 
-    - before-image: /assets/images/travel/travel-3.jpg
-      after-image: /assets/images/travel/travel-4.jpg
-    - before-image: /assets/images/travel/travel-3.jpg
-      after-image: /assets/images/travel/travel-4.jpg
-    - before-image: /assets/images/travel/travel-5.jpg
-      after-image: /assets/images/travel/travel-6.jpg
-    - before-image: /assets/images/travel/travel-7.jpg
-      after-image: /assets/images/travel/travel-8.jpg
-    - before-image: /assets/images/travel/travel-1.jpg
-      after-image: /assets/images/travel/travel-2.jpg
-    - before-image: /assets/images/travel/travel-3.jpg
-      after-image: /assets/images/travel/travel-4.jpg
+subtitle: Perfect for your summer in Europe
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, id quod corporis magni ipsam omnis labore sit commodi cum. Quos, consequatur accusantium? Ut corporis qui architecto. Labore nisi alias placeat.
+type: preset
+price: 25
+featured-image: /uploads/travel/travel-6.jpg
+hover-image: /uploads/travel/travel-7.jpg
+comparison-images: 
+    - before-image: /uploads/presets/ocean-blues-before-1.jpg
+      after-image: /uploads/presets/ocean-blues-after-1.jpg
+    - before-image: /uploads/presets/ocean-blues-before-2.jpg
+      after-image: /uploads/presets/ocean-blues-after-2.jpg
+    - before-image: /uploads/presets/ocean-blues-before-3.jpg
+      after-image: /uploads/presets/ocean-blues-after-3.jpg
+    - before-image: /uploads/presets/ocean-blues-before-4.jpg
+      after-image: /uploads/presets/ocean-blues-after-4.jpg
+    - before-image: /uploads/presets/ocean-blues-before-5.jpg
+      after-image: /uploads/presets/ocean-blues-after-5.jpg
+    - before-image: /uploads/presets/ocean-blues-before-6.jpg
+      after-image: /uploads/presets/ocean-blues-after-6.jpg
 ---
-
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque numquam, est consequuntur voluptas quidem voluptate delectus neque vero dolor aspernatur quisquam, esse illum. Sit totam quidem dolorum eveniet dignissimos ullam.

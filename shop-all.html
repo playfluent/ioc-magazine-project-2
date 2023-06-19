@@ -1,0 +1,50 @@
+---
+layout: default
+title: Shop
+banner-image: /assets/images/bg-sandwalker.jpg
+top-text: Shop Our
+text-color: text-white
+text-position: items-center
+banner-height: min-h-[35vh]
+background-position: bg-bottom left-0
+heading: Curanted <br>Collection.
+subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+quote: Once you get a taste for travel, you'll never be the same.
+quote-image: /assets/images/bg-sanddune.jpg
+seo:
+  title: 
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+{% include hero-banner.html %}
+
+<section class="max-w-screen-xl mx-auto p-5p" x-data="{ filter: 'all' }">
+
+	<h2 class="mb-4 text-4xl text-center"> Shop all products </h2> 
+
+	<div class="filter"> 
+		<a href="#" @click.prevent="filter = 'all'">All</a>
+        <a href="#" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a href="#" @click.prevent="filter = 'preset'">Presets </a>
+	</div>
+
+	<div class="grid grid-cols-3 gap-4">
+
+	{% assign all_products = site.products-guides | concat: site.products-presets | sort: 'title'  %}
+
+	{% for product in all_products %}
+		
+		<div class="{{product.type | slugify }}" 
+		  	 x-show="filter === 'all' || filter === '{{ product.type | slugify }}'">
+			{% include product-loop-item.html type=product.type  %}
+		</div>
+			
+	{% endfor %}
+
+	</div>
+
+</section>

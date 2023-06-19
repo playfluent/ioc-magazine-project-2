@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<section class="max-w-screen-xl mx-auto"> 
+    <div class="grid grid-cols-2 gap-4 min-h-70">
+        <div class="self-end max-w-lg px-8 py-12 xl:px-0">
+            <h1 class="text-6xl">{{page.title}}</h1>
+            <h2 class="text-2xl uppercase"> {{page.subtitle}}</h2>
+            <p class="mb-6"> {{page.description}} </p>
+            {% include shopify_buy.html buy-button-id=page.buy-button-id %}
+        </div>
+        <div class="relative">
+            <img src="{{page.featured-image}}" class="absolute inset-0 object-cover w-full h-full min-h-50">
+        </div>
+    </div>
+</section> 
+
+<!-- What's inside  -->
+
+<section class="bg-stone-100 p-5p">
+    <h2 class="text-4xl text-center uppercase"> A sneak peak inside </h2>
+    <div class="max-w-screen-lg mx-auto">
+
+            {% include thumbnail-gallery.html %}
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Frequently Asked Questions -->
+<section class="p-5p bg-stone-100">
+    
+    <div class="grid max-w-screen-xl grid-cols-5 gap-12 mx-auto">
+
+        <div class="col-span-3">
+            <h2 class="mb-2 text-4xl"> Table of Contents </h2>
+            <div>
+                {% include accordion.html 
+                    accordion-source=page.table-of-contents %}
+            </div>
+        </div>
+
+        <div class="col-span-2">
+                <h2 class="mb-2 text-4xl"> What's included: </h2>
+                {{ page.whats-included_html }}
+        </div> 
+    </div>
+</section>
+
+
+<!-- Related Products -->
+
+<section class="p-5p bg-stone-200">
+    <h2 class="text-4xl tracking-wide text-center uppercase"> Related Products </h2>
+    <div class="grid max-w-screen-xl mx-auto sm:grid-cols-3">
+
+        {% for product in site.products-guides %}
+
+             {% include product-loop-item.html type='travel guides'%}
+
+        {% endfor %}
+
+    </div>
+</section>
