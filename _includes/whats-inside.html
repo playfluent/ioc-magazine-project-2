@@ -2,20 +2,20 @@
     <div class="max-w-screen-xl mx-auto">
         <!-- Peak Inside -->
         <div class="pb-4">
-            <h2 class="blog-subheading text-4xl text-center pb-6">What's Inside</h2>
+            <h2 class="pb-6 text-4xl text-center blog-subheading">What's Inside</h2>
             
             {% include thumbnail-gallery.html %}
             
         </div>
 
         <!-- Bottom Grid -->
-        <div class="grid md:grid-cols-5 pt-8">
+        <div class="grid pt-8 md:grid-cols-5">
             <!-- Table of Contents -->
             <div class="col-span-3 px-4">
-                <h4 class="blog-subheading text-2xl pb-4">Table of Contents</h4>
+                <h4 class="pb-4 text-2xl blog-subheading">Table of Contents</h4>
                 <hr class="border-blog-dark">
                 {% for item in site.data.destinations.guide-contents %}
-                <div class="py-3 flex justify-between">
+                <div class="flex justify-between py-3">
                     <h3 class="blog-type1">{{item.country}}</h3>
                     <h3 class="blog-type1">{{item.dates}}</h3>
                 </div>
@@ -24,8 +24,8 @@
             </div>
             <!-- Whats Included List -->
             <div class="col-span-2 px-4 pt-8 md:pt-0">
-                <h4 class="blog-subheading text-2xl">What's Included</h4>
-                <ul class="list-disc m-6">
+                <h4 class="text-2xl blog-subheading">What's Included</h4>
+                <ul class="m-6 list-disc">
                     {% for item in site.data.how-to.instructions %}
                         <li>{{item.step}}</li>
                     {% endfor %}

@@ -3,17 +3,17 @@ layout: default
 ---
 <!-- Travel Guides Layout -->
 <section class="max-w-screen-xl mx-auto"> 
-    <div class="grid md:grid-cols-2 gap-4 md:min-h-70">
-        <div class="py-12 self-end max-w-lg px-8 xl:px-0">
+    <div class="grid gap-4 md:grid-cols-2 md:min-h-70">
+        <div class="self-end max-w-lg px-8 py-12 xl:px-0">
             <h1 class="text-6xl blog-heading">{{page.title}}</h1>
-            <h2 class="text-2xl uppercase blog-type2 py-4"> {{page.subtitle}}</h2>
+            <h2 class="py-4 text-2xl uppercase blog-type2"> {{page.subtitle}}</h2>
             <div class="mb-6"> {{content}} </div>
             
             {% include shopify_buy.html buy-button-id=page.buy-button-id %}
             
         </div>
         <div class="relative max-md:hidden">
-            <img src="{{page.featured_image}}" class="min-h-50 absolute inset-0 h-full w-full object-cover">
+            <img src="{{page.featured_image}}" class="absolute inset-0 object-cover w-full h-full min-h-50">
         </div>
     </div>
 </section>
@@ -22,10 +22,10 @@ layout: default
 
 <!-- Related Products -->
 <section class="p-5p">
-    <h2 class="blog-subheading text-4xl text-center pb-4">Related Products</h2>
-    <div class="grid sm:grid-cols-3 max-w-screen-xl mx-auto">
+    <h2 class="pb-4 text-4xl text-center blog-subheading">Related Products</h2>
+    <div class="grid max-w-screen-xl mx-auto sm:grid-cols-3">
         {% for product in site.products-guides limit:3 %}
-            {% include product_loop-related.html type='Travel Guide' %}
+            {% include product_loop-related.html type='travel guides' %}
         {% endfor %}
     </div>
 </section>
