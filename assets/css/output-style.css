@@ -1473,6 +1473,10 @@ div {
 .text-\[\] {
   color: ;
 }
+.text-\[\#c66868\] {
+  --tw-text-opacity: 1;
+  color: rgb(198 104 104 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
