@@ -1,21 +1,21 @@
 <section class="p-5p">
     <div class="max-w-screen-xl mx-auto">
-        <h2 class="pb-8 text-center text-4xl blog-subheading">Past Travel Destinations</h2>
+        <h2 class="pb-8 text-4xl text-center blog-subheading editable">Past Travel Destinations</h2>
         <div class="grid md:grid-cols-5">
             <div class="col-span-3 p-4">
                 <div class="text-blog-dark">
                     <hr class="border-blog-dark">
                     {% for item in site.data.destinations.past-travel %}
-                    <div class="py-3 flex justify-between">
-                        <h3 class="blog-type1">{{item.country}}</h3>
-                        <h3 class="blog-type1">{{item.dates}}</h3>
-                    </div>
-                    <hr class="border-blog-dark">
+                        <div class="flex justify-between py-3">
+                            <h3 class="blog-type1">{{item.country}}</h3>
+                            <h3 class="blog-type1">{{item.dates}}</h3>
+                        </div>
+                        <hr class="border-blog-dark">
                     {% endfor %}
                 </div>
             </div>
-            <div class="bg-cover col-span-2 relative" style="background-image: url('{{page.upcoming_image}}');">
-                <h2 class="max-md:hidden absolute top-2/3 left-0 max-w-xs p-4 bg-blog-light text-4xl blog-heading">Currently in...</h2>
+            <div class="relative col-span-2 bg-cover" style="background-image: url('{{page.upcoming_image}}');">
+                <h2 class="absolute left-0 max-w-xs p-4 text-4xl max-md:hidden top-2/3 bg-blog-light blog-heading editable">Currently in...</h2>
             </div>
         </div>
     </div>
