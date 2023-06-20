@@ -24,12 +24,12 @@ seo:
 
 <section class="max-w-screen-xl mx-auto p-5p" x-data="{ filter: 'all' }">
 
-	<h2 class="mb-4 text-4xl text-center"> Shop all products </h2> 
+	<h2 class="mb-4 text-4xl text-center editable"> Shop all products </h2> 
 
 	<div class="filter"> 
-		<a href="#" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
-        <a href="#" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
-        <a href="#" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
+		<a href="#" class="editable" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
+        <a href="#" class="editable" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a href="#" class="editable" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
 	</div>
 
 	<div class="grid grid-cols-3 gap-4">
